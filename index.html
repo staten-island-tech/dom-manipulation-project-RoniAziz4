@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom manipulation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+
+    </div>
+<form id="form">
+    <input 
+        required
+        type="text"
+        id="name"
+        name="name" 
+        placeholder="Name"
+        autocomplete="off"
+    />
+    <input 
+        required
+        type="text"
+        id="occ"
+        name="occ" 
+        placeholder="Occupation"
+        autocomplete="off"
+    />
+    <input 
+        required
+        type="text"
+        id="resLink"
+        name="resLink" 
+        placeholder="Resume link"
+        autocomplete="off"
+    />
+</form>
+    <input id="submit" type="submit" value="Submit" />
+    <div id="btnHolder">
+        <button id="reset" onClick="refresh()">Reset</button>
+        <button id="undo" onClick="undo()">Undo</button>
+      </div>
+      <div class="container" id="container"></div>
+        <script src="index.js"></script>
+</body>
