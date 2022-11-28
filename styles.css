@@ -31,6 +31,24 @@ h1 {
     transition: filter 200ms ease, transform 200ms ease;
   }
 
+  form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto 30px 0 30px;
+    flex-direction: column;
+  }
+  
+  #btnHolder {
+    margin: 0 30px auto 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto 30px 0 30px;
+    flex-direction: row;
+  }
+  
+
   input,
 #reset,
 #undo,
@@ -44,4 +62,38 @@ h1 {
 .title {
   font-weight: 700;
   font-size: 2rem;
+}
+
+.img {
+  display: flex;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--curve);
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  color: black;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.bg {
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+}
+
+.bg::before {
+  width: calc(100vw + 100vh);
+  height: calc(100vw + 100vh);
+  content: "";
+  position: absolute;
+  background-image: conic-gradient(var(--color1), var(--color2), var(--color1));
+  animation: 15s linear infinite rot;
+  translate: -50vh -50vw;
 }
